@@ -1,0 +1,160 @@
+body{
+  background-image: url(ywach.webp);
+  background-size: cover;
+  color: white;
+}
+h3{
+  margin-top: 40px;
+}
+
+.activeListItem {
+  animation: blinkText 6s infinite;
+}
+
+
+
+@keyframes blinkBackground {
+    
+  0% {
+      background-color:  black;
+  }
+
+  20% {
+      background-color: rgb(230, 178, 186);
+  }
+
+  40% {
+      background-color:yellow;
+  }
+
+  60% {
+      background-color: steelblue;
+  }
+
+  80% {
+      background-color: greenyellow;
+  }
+
+  100% {
+      background-color: black;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+      background-color: black;
+  }
+
+  20% {
+      background-color: pink;
+  }
+
+  40% {
+      background-color: yellow;
+  }
+
+  60% {
+      background-color: steelblue;
+  }
+
+  80% {
+      background-color: greenyellow;
+  }
+
+  100% {
+      background-color: black;
+  }
+}
+
+
+@keyframes blink {
+  
+  0% {
+      border: 7px solid red;
+      border-radius: 4px;
+  }
+
+  20% {
+      border: 7px solid pink;
+      border-radius: 4px;
+  }
+
+  40% {
+      border: 7px solid yellow;
+      border-radius: 4px;
+  }
+
+  60% {
+      border: 7px solid steelblue;
+      border-radius: 4px;
+  }
+
+  80% {
+      border: 7px solid greenyellow;
+      border-radius: 4px;
+  }
+
+  100% {
+      border: 7px solid red;
+      border-radius: 4px;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+      border: 7px solid red;
+      border-radius: 4px;
+  }
+
+  20% {
+      border: 7px solid pink;
+      border-radius: 4px;
+  }
+
+  40% {
+      border: 7px solid yellow;
+      border-radius: 4px;
+  }
+
+  60% {
+      border: 7px solid steelblue;
+      border-radius: 4px;
+  }
+
+  80% {
+      border: 7px solid greenyellow;
+      border-radius: 4px;
+  }
+
+  100% {
+      border: 7px solid red;
+      border-radius: 4px;
+  }
+}
+
+@keyframes blinkText {
+    
+  0% {
+      color:  black;
+  }
+
+  20% {
+      color: rgb(230, 178, 186);
+  }
+
+  40% {
+      color:yellow;
+  }
+
+  60% {
+      color: steelblue;
+  }
+
+  80% {
+      color: greenyellow;
+  }
+
+  100% {
+      color: black;
+  }
+}

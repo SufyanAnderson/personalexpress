@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>21 Savage Fans</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Anime Quote Database</h1>
+  <h2>Add the verse, character, and quote!</h2>
+
+
+  <h3>Quotes</h3>
+  <ul class="messages">
+  <% for(var i=0; i<messages.length; i++) {%>
+    <% const favorited =  messages[i].favorited%>
+    <li class="message <%= favorited == true ? 'activeListItem' : 'unactiveListItem' %>">
+      <span><%= messages[i].name %></span>
+      <span><%= messages[i].quote %></span>
+      <span><%= messages[i].verse %></span>
+      <span><i class="fa fa-heart" aria-hidden="true"></i></span>
+      <!-- <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+      <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span> -->
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <h2>Add a quote</h2>
+
+  <form action="/messages" method="POST">
+    <input type="text" placeholder="verse" name="verse">
+    <input type="text" placeholder="character" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
